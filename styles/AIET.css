@@ -1,0 +1,338 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.honor-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.honor-card:hover {
+    transform: translateY(-5px);
+}
+
+.honor-year-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    z-index: 2;
+}
+
+.honor-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.honor-info {
+    padding: 20px;
+}
+
+.grades-container {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center;
+    gap: 30px;
+}
+
+.grade-card {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 320px;        
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grade-card:hover {
+    transform: translateY(-10px);
+}
+
+.grade-img-box {
+    width: 100%;
+    height: 280px;        
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.grade-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    
+    transition: transform 0.5s ease;
+}
+
+.grade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.grade-card:hover .grade-img-box img {
+    transform: scale(1.1);
+}
+
+.grade-card:hover .grade-overlay {
+    transform: translateY(0);
+}
+
+.grade-label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.activity-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 250px;
+    cursor: pointer;
+}
+
+.activity-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.activity-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 20px;
+    color: #fff;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease;
+}
+
+.activity-item:hover img {
+    transform: scale(1.1);
+}
+
+.activity-item:hover .activity-overlay {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 500px) {
+    .activities-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.cert-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: var(--accent-color);
+}
+
+.cert-img-container {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.cert-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-img-container img {
+    transform: scale(1.05);
+}
+
+.cert-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.cert-info h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.cert-issuer {
+    font-size: 0.9rem;
+    color: var(--accent-color); 
+    font-weight: 600;
+}
+
+.grad-project-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    flex-wrap: wrap;
+}
+
+.grad-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.grad-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.grad-grade {
+    display: inline-block;
+    background: #d4edda;
+    color: #155724;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grad-gallery {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.gallery-slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.gallery-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.next {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.gallery-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active, .dot:hover {
+    background-color: var(--accent-color);
+}

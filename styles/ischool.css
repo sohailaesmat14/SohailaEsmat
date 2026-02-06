@@ -1,0 +1,57 @@
+.ischool-hero {
+    text-align: center;
+    padding: 100px 20px 40px;
+    background: linear-gradient(to bottom, var(--white), var(--bg-light));
+}
+
+.ischool-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.ischool-badge {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.ischool-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-item {
+    height: 300px; 
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        height: 250px;
+    }
+}
