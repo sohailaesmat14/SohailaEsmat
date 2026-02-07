@@ -222,6 +222,11 @@ nav {
     flex-wrap: wrap; 
 }
 
+.social-links a {
+    text-decoration: none !important;
+    border: none;
+}
+
 .work-btn {
     padding: 12px 30px;
     border-radius: 50px;
