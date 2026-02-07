@@ -64,6 +64,29 @@ header {
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+.progress-container {
+    width: 100%;
+    height: 5px; 
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.progress-bar {
+    height: 5px;
+    background: var(--accent-color);
+    width: 0%; 
+    border-radius: 0 5px 5px 0;
+    transition: width 0.1s; 
+}
+
+nav ul li a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color); 
+    font-weight: bold;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -966,30 +989,4 @@ footer h2::after {
 #backToTopBtn:hover {
     background-color: var(--accent-color); 
     transform: translateY(-5px); 
-}
-
-/*---------------------------------------- ProgressContainer Section ---------------------------------------- */
-
-.progress-container {
-    width: 100%;
-    height: 5px; 
-    background: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
-}
-
-.progress-bar {
-    height: 5px;
-    background: var(--accent-color);
-    width: 0%; 
-    border-radius: 0 5px 5px 0;
-    transition: width 0.1s; 
-}
-
-nav ul li a.active {
-    color: var(--accent-color);
-    border-bottom: 2px solid var(--accent-color); 
-    font-weight: bold;
 }
