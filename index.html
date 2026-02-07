@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="sohaila's Portfolio - .Net Full Stack Developer">
+    <meta name="description" content="Sohaila Esmat - Software Engineer specializing in Web Development and .NET.">
+    <meta name="keywords" content="Sohaila Esmat, Software Engineer, Portfolio, Web Developer, .NET, ITI">
+    <meta property="og:title" content="Sohaila Esmat | Software Engineer">
+    <meta property="og:description" content="Passionate about building innovative software solutions. Check out my projects and journey.">
+    <meta property="og:image" content="https://sohailaesmat14.github.io/SohailaEsmat/resources/now-professional.jpg">
+    <meta property="og:url" content="https://sohailaesmat14.github.io/SohailaEsmat/">
+    <meta property="og:type" content="website">
     <title>Sohaila Esmat | Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/resources/favicon.svg">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-
     <header>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -29,14 +38,19 @@
             <div class="hero-content">
                 <h1>Hello,</h1>
                 <h1>I'm Sohaila Esmat</h1>
-                <p>.Net Full Stack Developer | CRM Specialist</p>
+                <p><span class="typing-text"></span></p>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/sohailaesmat/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/sohailaesmat14" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://t.me/SohailaEsmat" aria-label="Telegram" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="mailto:sohailabs1410@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/sohailaesmat/"target="_blank" aria-label="LinkedIn"rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sohailaesmat14"target="_blank" aria-label="GitHub"rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/SohailaEsmat"target="_blank" aria-label="Telegram" target="_blank"rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                    <a href="mailto:sohailabs1410@gmail.com" target="_blank"aria-label="Email"rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                 </div>
-                <a href="#projects" class="btn">View My Work</a>
+                <div style="margin-top: 30px;">
+                    <a href="#" class="btn download-btn" ><!-- download="Sohaila_Esmat_Resume.pdf" -->
+                        Download Resume <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
             </div>
 
             <div class="hero-image-container">
@@ -316,13 +330,16 @@
     <footer id="contact">
         <h2>Let's Connect</h2>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/sohailaesmat/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/sohailaesmat14" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://t.me/SohailaEsmat" aria-label="Telegram" target="_blank"><i class="fab fa-telegram"></i></a>
-            <a href="mailto:sohailabs1410@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/sohailaesmat/"target="_blank" aria-label="LinkedIn"rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sohailaesmat14"target="_blank" aria-label="GitHub"rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/SohailaEsmat"target="_blank" aria-label="Telegram" target="_blank"rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+            <a href="mailto:sohailabs1410@gmail.com"target="_blank" aria-label="Email"rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
         </div>
         <p style="margin-top: 20px; font-size: 0.8rem;">&copy; 2026 Sohaila. All Rights Reserved.</p>
     </footer><!-- footer -->
-
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
