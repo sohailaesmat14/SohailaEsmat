@@ -1,10 +1,10 @@
-window.addEventListener("load", function () {
-    const loader = document.getElementById("preloader");
-    loader.classList.add("loader-hidden");
-    loader.addEventListener("transitionend", function() {
-        document.body.removeChild(loader);
-    });
-});
+// window.addEventListener("load", function () {
+//     const loader = document.getElementById("preloader");
+//     loader.classList.add("loader-hidden");
+//     loader.addEventListener("transitionend", function() {
+//         document.body.removeChild(loader);
+//     });
+// });
 
 let mybutton = document.getElementById("backToTopBtn");
 window.onscroll = function() {
