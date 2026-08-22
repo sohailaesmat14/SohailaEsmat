@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITI Journey</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../resources/grad.svg">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/AIET.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html#education-showcase" style="font-weight: bold; color: var(--accent-color); text-decoration: none;">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#grad-project">Graduation Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="honor" style="text-align: center;">
+            <h1 style="font-size: 3rem; color: var(--primary-color);">ITI Journey</h1>
+            <p style="font-size: 1.2rem; color: var(--secondary-color); padding-bottom: 10px;">9-Months of Professional Development & BI infused CRM.</p>
+        </section>
+
+        <section id="activities">
+            <h2>Activities & Sessions</h2>
+            
+            <div class="activities-grid">
+                <div class="activity-item">
+                    <img src="../resources/ITI3.jpg" alt="Presentation Skills Session">
+                    <div class="activity-overlay">
+                        <h4>Presentation Skills sessoin in English</h4>
+                        <p>The Butterfly Effect Concept</p>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <img src="../resources/ITI1.jpeg" alt="Presentation Skills Team">
+                    <div class="activity-overlay">
+                        <h4>Presentation Skills sessoin in Arabic </h4>
+                        <p>First Aid</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grad-project" style="background: var(--bg-darker); margin-top: 80px;">
+            <h2>Graduation Project</h2>
+            
+            <div class="grad-project-container">
+                <div class="grad-gallery">
+                    <div class="gallery-container">
+                        <div class="gallery-slides">
+                            <div class="gallery-slide">
+                                <img src="../resources/ITI5.png" alt="MediTender Dashboard View 1">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="../resources/ITI2.png" alt="MediTender Dashboard View 2">
+                            </div>
+                        </div>
+
+                        <div class="gallery-dots">
+                            <span class="dot active" onclick="currentSlide(0)"></span>
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grad-info">
+                    <h3 class="grad-title">MediTender Smart Assistant</h3>
+                    
+                    <p style="margin-bottom: 15px; font-size: 1.1rem;">
+                        A .NET Web API solution designed for automated tender document analysis, leveraging advanced vector search capabilities and semantic reasoning.
+                    </p>
+                    
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">My Role:</h4>
+                    <ul style="list-style: none; margin-bottom: 20px;">
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-color);"></i> Engineered the backend infrastructure and API endpoints.</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-color);"></i> Integrated Semantic Kernel for intelligent data processing.</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-color);"></i> Configured and managed the Qdrant vector database.</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--accent-color);"></i> Developed the front-end dashboard UI for data visualization.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 20px; background: var(--primary-color); color: #fff;">
+        <p>&copy; Sohaila Esmat. ITI Journey.</p>
+    </footer>
+    <script src="../scripts/AIET.js"></script>
+</body>
+</html>

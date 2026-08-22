@@ -28,7 +28,7 @@ function topFunction() {
 }
 
 const textElement = document.querySelector(".typing-text");
-const texts = ["Business Intelligence Developer " ,"Microsoft CRM Dynamics Developer" , "Frontend Developer"]; 
+const texts = ["Business Intelligence Developer " ,"Data Analyst" ]; 
 let count = 0;
 let index = 0;
 let currentText = "";

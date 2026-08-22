@@ -294,7 +294,7 @@ nav {
 }
 
 section {
-    padding: 5rem 2rem;
+    padding: 2rem 1rem;
     max-width: 1200px;
     margin: auto;
 }
@@ -318,6 +318,10 @@ h2::after {
     left: 50%;
     transform: translateX(-50%);
 }
+#honor {
+  padding: 2rem 1rem; 
+}
+
 
 .download-btn:hover i {
     animation: bounce 0.6s infinite alternate;
@@ -378,7 +382,7 @@ h2::after {
 .edu-card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: contain; 
     object-position: center top; 
 }
 
@@ -692,7 +696,8 @@ h2::after {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
+    gap: 1.5rem;
+    align-items: start;
 }
 
 article.project-card {
@@ -1038,7 +1043,7 @@ footer h2::after {
 
     .hero-content h1 { font-size: 2.5rem; }
     
-    section { padding: 4rem 1.5rem; }
+    section { padding: 2rem 1rem; }
     h2 { font-size: 2rem; }
 }
 
@@ -1064,4 +1069,59 @@ footer h2::after {
 #backToTopBtn:hover {
     background-color: var(--accent-color); 
     transform: translateY(-5px); 
+}
+
+#certifications {
+    padding: 80px 10%;
+    background-color: var(--bg-light);
+}
+
+.certifications-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cert-card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--bg-card);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cert-content {
+    padding: 20px;
+}
+
+.cert-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.cert-highlight {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.cert-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
 }

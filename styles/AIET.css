@@ -4,6 +4,11 @@ header {
     z-index: 1000;
 }
 
+#honor {
+  padding: 2rem 1rem; 
+}
+
+
 .honors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -113,8 +118,9 @@ header {
 
 .activities-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
 }
 
 .activity-item {
