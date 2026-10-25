@@ -1030,12 +1030,6 @@ footer h2::after {
         padding: 1rem;
     }
     
-    .nav-links {
-        margin-top: 1.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
     .nav-links li a {
         margin: 0 10px;
         font-size: 0.9rem;
@@ -1048,17 +1042,24 @@ footer h2::after {
 }
 
 @media (max-width: 768px) {
-    #hero {
-        padding-top: 100px !important;
-    }
-    
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #3E4146; 
-        z-index: 9999;
+        position: relative;
+        height: auto;
+        padding-bottom: 15px;
+        z-index: 999;
+    }
+    #hero {
+        padding-top: 20px !important;
+    }
+    .video-container {
+        position: relative;
+        z-index: 10;
+    }
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 }
 
