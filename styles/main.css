@@ -1047,6 +1047,21 @@ footer h2::after {
     h2 { font-size: 2rem; }
 }
 
+@media (max-width: 768px) {
+    #hero {
+        padding-top: 100px !important;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #3E4146; 
+        z-index: 9999;
+    }
+}
+
 /*---------------------------------------- BackToTopBtn Section ---------------------------------------- */
 
 #backToTopBtn {
