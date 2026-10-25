@@ -73,3 +73,29 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById('storyVideo');
+    
+    if (video) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.catch(error => {
+                            console.log("Autoplay blocked by browser policy until user interacts.");
+                        });
+                    }
+                } else {
+                    video.pause();
+                }
+            });
+        }, { 
+            threshold: 0.5 
+        });
+
+        observer.observe(video);
+    }
+});
