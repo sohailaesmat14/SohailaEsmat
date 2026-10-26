@@ -1024,44 +1024,7 @@ footer h2::after {
     }
 }
 
-@media(max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 1rem;
-    }
-    
-    .nav-links li a {
-        margin: 0 10px;
-        font-size: 0.9rem;
-    }
 
-    .hero-content h1 { font-size: 2.5rem; }
-    
-    section { padding: 2rem 1rem; }
-    h2 { font-size: 2rem; }
-}
-
-@media (max-width: 768px) {
-    header {
-        position: relative;
-        height: auto;
-        padding-bottom: 15px;
-        z-index: 999;
-    }
-    #hero {
-        padding-top: 20px !important;
-    }
-    .video-container {
-        position: relative;
-        z-index: 10;
-    }
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-}
 
 /*---------------------------------------- BackToTopBtn Section ---------------------------------------- */
 
@@ -1140,4 +1103,19 @@ footer h2::after {
     font-size: 0.9rem;
     color: #777;
     margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+    nav {
+        display: none !important;
+    }
+    #hero {
+        padding-top: 20px !important; 
+        margin-top: 0 !important;
+    }
+    
+    header {
+        height: auto !important;
+        padding-bottom: 0 !important;
+    }
 }
